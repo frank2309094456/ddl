@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>DaDaLa Login</title>
+</head>
+<body>
+	<div>
+		<form th:action="@{/doLogin}" method="post">
+			<input id="uid" type="text" name="username" /><br/>
+			<input id="pid" type="password" name="password" /><br/>
+			<div th:text="${error}"></div>
+			<button type="submit">提交</button>
+		</form>
+	</div>
+</body>
+</html>

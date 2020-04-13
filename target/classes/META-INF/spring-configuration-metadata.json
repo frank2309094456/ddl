@@ -1,0 +1,42 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.entity.Config",
+      "name": "config",
+      "type": "com.entity.Config"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.entity.Config",
+      "name": "config.create-time",
+      "description": "创建时间",
+      "type": "java.util.Date"
+    },
+    {
+      "sourceType": "com.entity.Config",
+      "name": "config.ip",
+      "description": "IP地址",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.entity.Config",
+      "name": "config.port",
+      "description": "端口",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.entity.Config",
+      "name": "config.update-time",
+      "description": "更新时间",
+      "type": "java.util.Date"
+    },
+    {
+      "sourceType": "com.entity.Config",
+      "name": "config.upload-file-path",
+      "description": "文件上传保存路径",
+      "type": "java.lang.String"
+    }
+  ]
+}
