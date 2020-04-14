@@ -7,7 +7,7 @@
  * @version V1.0
  */
 
-package com.appconfig.shiro;
+package com.appconfig.auth.shiro;
 
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.realm.text.TextConfigurationRealm;
@@ -31,8 +31,8 @@ public class ShiroConfig {
 	@Bean
 	public Realm realm() {
 		TextConfigurationRealm realm = new TextConfigurationRealm();
-		realm.setUserDefinitions("frank=123456,user\n admin=admin,admin");
-		realm.setRoleDefinitions("user=read\n admin=read,write");
+		realm.setUserDefinitions("admin=admin,admin\n frank=123456,user");
+		realm.setRoleDefinitions("admin=read,write\n user=read");
 		return realm;
 	}
 

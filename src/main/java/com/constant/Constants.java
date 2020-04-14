@@ -99,7 +99,6 @@ public class Constants {
 			return getTypeByCode(code).desc;
 		}
 
-		// 测试方法(在实际中是在其它地方以该种方式进行调用)
 		public static void main(String[] args) {
 			System.out.println("----------------------------");
 			System.out.println(FreezeType.getDescByCode(0));
