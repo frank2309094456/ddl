@@ -27,7 +27,7 @@ public class TimeSchedule {
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@Scheduled(fixedDelay = 2000)
+	@Scheduled(fixedDelay = 60000)
 	public void fixedDelay() {
 		logger.info("######fixedDelay:{}, after finish this task and wait for n/1000 s then next.", new Date());
 	}
