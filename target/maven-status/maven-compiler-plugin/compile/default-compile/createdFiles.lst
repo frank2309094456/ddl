@@ -21,6 +21,7 @@ com\appconfig\init\MyListener.class
 com\job\quartz\JobOne.class
 com\appconfig\init\MyServlet.class
 com\appconfig\websocket\Message.class
+com\utils\StringUtils.class
 com\controller\InitController.class
 com\exception\UploadExceptionHandler.class
 com\mongodao\UserDao.class
@@ -40,6 +41,7 @@ com\appconfig\mq\rabbitmq\fanout\RabbitFanoutConfig.class
 com\controller\LoginController.class
 com\controller\UserController.class
 com\appconfig\mq\activemq\ActiveMqController.class
+com\utils\StringUtils$1.class
 com\appconfig\batch\CsvBatchJobConfig$1.class
 com\appconfig\mq\rabbitmq\direct\RabbitDirectConfig.class
 com\appconfig\aspectlogs\LogAspect.class
@@ -52,6 +54,7 @@ com\appconfig\mq\rabbitmq\fanout\RabbitFanoutReciever.class
 com\appconfig\mq\rabbitmq\header\RabbitHeaderConfig.class
 com\Application.class
 com\exception\UnAuthorizationExceptionController.class
+com\utils\StringUtils$CsvSplitState.class
 com\appconfig\mq\activemq\ActiveMqReciever.class
 com\appconfig\websocket\WebSocketConfig.class
 com\entity\Config.class
