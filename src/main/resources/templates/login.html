@@ -6,7 +6,8 @@
 </head>
 <body>
 	<div>
-		<form th:action="@{/doLogin}" method="post">
+		<!-- this place should use method="post", use 'get' for convenient -->
+		<form th:action="@{/doLogin}" method="get">
 			<input id="uid" type="text" name="username" /><br/>
 			<input id="pid" type="password" name="password" /><br/>
 			<div th:text="${error}"></div>

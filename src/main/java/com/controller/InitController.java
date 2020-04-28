@@ -82,15 +82,16 @@ public class InitController {
 	@Autowired
 	private Registration registration;
 
-	@GetMapping("/helloeureka")
-	public String say() {
+	@GetMapping("/storeService")
+	public String storeService() {
 		List<ServiceInstance> services = client.getInstances(registration.getServiceId());
 		if (StringUtils.isNotEmpty(services)) {
 			for (ServiceInstance service : services) {
-				logger.info("host:{}, serviceId:{}", service.getHost(), service.getServiceId());
+				logger.info("EEEEEEEEEEE Get service info from the regist-center >>>>>> host:{}, serviceId:{}", service.getHost(),
+						service.getServiceId());
 			}
 		}
-		return "hello eureka";
+		return "Now the service(spring.application.name=store-service) hash been injected into Eureka-Register!";
 	}
 
 }

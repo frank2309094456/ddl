@@ -17,7 +17,6 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  * @author: Frankjiu
@@ -26,7 +25,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class LoginController {
 
-	@PostMapping("/doLogin")
+	@GetMapping("/doLogin")
+	// @PostMapping("/doLogin")
 	public String doLogin(String username, String password, Model model) {
 		UsernamePasswordToken token = new UsernamePasswordToken(username, password);
 		Subject subject = SecurityUtils.getSubject();

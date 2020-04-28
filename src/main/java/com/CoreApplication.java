@@ -32,15 +32,15 @@ import com.utils.SpringUtil;
 @EnableScheduling
 @EnableBatchProcessing
 @EnableDiscoveryClient
-public class Application {
+public class CoreApplication {
 
-	private static final Logger logger = LoggerFactory.getLogger(Application.class);
+	private static final Logger logger = LoggerFactory.getLogger(CoreApplication.class);
 
 	@Autowired
 	InitController initController;
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(CoreApplication.class, args);
 		InitController initCtl = (InitController) SpringUtil.getBean("initController");
 		String initInfo = initCtl.init();
 		logger.info("读取配置文件信息:{}", initInfo);

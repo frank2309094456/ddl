@@ -8,6 +8,7 @@ com\constant\Constants$FreezeType.class
 com\controller\UploadController.class
 com\appconfig\swagger2\SwaggerConfig.class
 META-INF\spring-configuration-metadata.json
+com\CoreApplication.class
 com\appconfig\init\MyCommandLineRunner1.class
 com\appconfig\mail\MailService.class
 com\appconfig\mq\rabbitmq\header\RabbitHeaderController.class
@@ -52,7 +53,6 @@ com\appconfig\auth\shiro\WebMvcConfig.class
 com\appconfig\auth\security\WebSecurityConfig.class
 com\appconfig\mq\rabbitmq\fanout\RabbitFanoutReciever.class
 com\appconfig\mq\rabbitmq\header\RabbitHeaderConfig.class
-com\Application.class
 com\exception\UnAuthorizationExceptionController.class
 com\utils\StringUtils$CsvSplitState.class
 com\appconfig\mq\activemq\ActiveMqReciever.class

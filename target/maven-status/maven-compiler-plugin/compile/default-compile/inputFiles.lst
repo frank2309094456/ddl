@@ -2,6 +2,7 @@ D:\eclipse\workspace\ddl\src\main\java\com\appconfig\batch\BatchController.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\websocket\MeetingController.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\mail\EmailUser.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\mail\SimpleMailController.java
+D:\eclipse\workspace\ddl\src\main\java\com\CoreApplication.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\init\MyServlet.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\init\MyCommandLineRunner1.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\mq\rabbitmq\header\RabbitHeaderController.java
@@ -42,7 +43,6 @@ D:\eclipse\workspace\ddl\src\main\java\com\controller\LoginController.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\aspectlogs\LogAspect.java
 D:\eclipse\workspace\ddl\src\main\java\com\controller\UploadController.java
 D:\eclipse\workspace\ddl\src\main\java\com\job\quartz\QuartzConfig.java
-D:\eclipse\workspace\ddl\src\main\java\com\Application.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\auth\security\WebSecurityConfig.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\mq\activemq\ActiveMqConfig.java
 D:\eclipse\workspace\ddl\src\main\java\com\appconfig\mq\rabbitmq\direct\RabbitDirectController.java

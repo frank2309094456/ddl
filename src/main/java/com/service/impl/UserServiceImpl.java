@@ -18,6 +18,7 @@ import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.entity.User;
 import com.mapper.UserMapper;
@@ -37,16 +38,19 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	UserMapper userMapper;
 
+	@Transactional
 	public int addUser(User user) {
 		return userMapper.addUser(user);
 	}
 
+	@Transactional
 	@CacheEvict(value = "c1")
 	public int deleteUserById(String id) {
 		logger.info("======>deleteUserById:{}======>", id);
 		return userMapper.deleteUserById(id);
 	}
 
+	@Transactional
 	@CachePut(value = "c1")
 	public int updateUserById(User user) {
 		return userMapper.updateUserById(user);

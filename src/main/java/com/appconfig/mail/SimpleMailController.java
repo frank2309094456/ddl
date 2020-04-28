@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-import com.Application;
+import com.CoreApplication;
 import com.constant.Constants.EmailConstants;
 
 import freemarker.template.Configuration;
@@ -72,7 +72,7 @@ public class SimpleMailController {
 	public String sendHtmlMailByFreemarker() {
 		try {
 			Configuration config = new Configuration(Configuration.VERSION_2_3_0);
-			ClassLoader loader = Application.class.getClassLoader();
+			ClassLoader loader = CoreApplication.class.getClassLoader();
 			config.setClassLoaderForTemplateLoading(loader, "ftl");
 			Template template = config.getTemplate("mailtemplate.ftl");
 			StringWriter writer = new StringWriter();
