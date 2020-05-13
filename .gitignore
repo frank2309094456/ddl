@@ -1,2 +1,12 @@
-/.apt_generated/
+target/
 /target/
+**/target/
+*.class
+*.jar
+*.war
+*.log
+.project
+.settings
+*.zip
+*.rar
+*.tar.gz

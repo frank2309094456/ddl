@@ -72,7 +72,7 @@ public class UserController {
 			@ApiImplicitParam(paramType = "query", name = "userName", value = "用户名", required = true, defaultValue = "frank"),
 			@ApiImplicitParam(paramType = "query", name = "password", value = "密码", required = true, defaultValue = "123456"),
 			@ApiImplicitParam(paramType = "query", name = "age", value = "年龄", required = false) })
-	@PostMapping("/addUser")
+	@GetMapping("/addUser")
 	public int addUser(@Validated User user) {
 		user.setUserName("test111");
 		user.setPassWord("121121");

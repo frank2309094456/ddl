@@ -22,7 +22,6 @@
     },
     {
       "sourceType": "com.entity.Config",
-      "defaultValue": 0,
       "name": "config.port",
       "description": "端口",
       "type": "java.lang.Integer"
